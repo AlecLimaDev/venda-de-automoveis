@@ -16,22 +16,26 @@ A aplicação se trata de um anúncio de vendas de automóveis usados.
 
 ✔️ Adição de carros ao carinho de compra.
 
+✔️ Opção de limpar o carrinho de compra.
+
+✔️ Opção para você escolher manualmente qual carro vai excluir do carrinho de compra.
+
 ✔️ Registro de dono do veículo, email, celular e avaliação do comprador.
 
-✔️ Sistema de Autenticação de usuário.
+✔️ Opção de visualizar, criar, editar e excluir os dados do dono do carro. 
 
 ## `Aplicação`
 
- `Deploy`.
+ No link a seguir contém o Link da aplicação: [`Deploy`](https://venda-de-automoveis.vercel.app/).
 
 
 ## `VISUALIZAÇÃO DO PROJETO`
 
-Para ver o projeto na sua máquina você vai dar um git clone nesse link: 
+Para ver o projeto na sua máquina você vai dar um git clone nesse link: `https://github.com/AlecLimaDev/venda-de-automoveis.git`.
 
-Baixar as dependências necessárias atráves do `npm install`
+Baixar as dependências necessárias atráves do `npm install`.
 
-Rodar o servidor da aplicação através do `npm run server` e abrir a aplicação através do `npm run dev`
+Rodar o servidor da aplicação através do `npm run server` e abrir a aplicação através do `npm run dev`.
 
 
 # `TECNOLOGIAS UTILIZADAS`
