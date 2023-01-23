@@ -1,38 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+- Status do projeto: Concluído ✔️
 
-First, run the development server:
+# `Venda de Automóveis 🔥`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## `Descrição do projeto`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+A aplicação se trata de um anúncio de vendas de automóveis usados.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### `Funcionalidades`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+✔️ Backend realizando as requisições feita.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+✔️ Validações dos inputs.
 
-## Learn More
+✔️ Adição de carros ao carinho de compra.
 
-To learn more about Next.js, take a look at the following resources:
+✔️ Registro de dono do veículo, email, celular e avaliação do comprador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✔️ Sistema de Autenticação de usuário.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## `Aplicação`
 
-## Deploy on Vercel
+ `Deploy`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## `VISUALIZAÇÃO DO PROJETO`
+
+Para ver o projeto na sua máquina você vai dar um git clone nesse link: 
+
+Baixar as dependências necessárias atráves do `npm install`
+
+Rodar o servidor da aplicação através do `npm run server` e abrir a aplicação através do `npm run dev`
+
+
+# `TECNOLOGIAS UTILIZADAS`
+
+## Para a realização desse projeto foram utilizadas as seguintes Tecnologias:
+
+- Next.Js
+- React.Js
+- React-Icons
+- Node.js
