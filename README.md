@@ -31,11 +31,11 @@ A aplicação se trata de um anúncio de vendas de automóveis usados.
 
 ## `VISUALIZAÇÃO DO PROJETO`
 
-Para ver o projeto na sua máquina você vai dar um git clone nesse link: `https://github.com/AlecLimaDev/venda-de-automoveis.git`.
+Para ver o projeto em sua máquina, você precisará cloná-lo com o comando `git clone` nesse link: `https://github.com/AlecLimaDev/venda-de-automoveis.git`.
 
-Baixar as dependências necessárias atráves do `npm install`.
+Em seguida, você precisará baixar as dependências necessárias usando o comando `npm install`.
 
-Rodar o servidor da aplicação através do `npm run server` e abrir a aplicação através do `npm run dev`.
+Por fim, você precisará rodar o servidor da aplicação usando o comando `npm run server` e abrir a aplicação usando o comando `npm run dev`.
 
 
 # `TECNOLOGIAS UTILIZADAS`
