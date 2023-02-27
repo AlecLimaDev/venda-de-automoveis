@@ -46,3 +46,7 @@ Por fim, você precisará rodar o servidor da aplicação usando o comando `npm 
 - React.Js
 - React-Icons
 - Node.js
+
+# `LAYOUT`
+
+![IMAGEM](review/Review.gif)
