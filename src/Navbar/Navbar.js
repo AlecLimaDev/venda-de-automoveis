@@ -1,6 +1,6 @@
 import { CartContext } from '@/contexts/CartContext'
 import React, { useContext } from 'react'
-import Logo from '../Logo'
+import Logo from '../Logo/Logo'
 
 const Navbar = () => {
     const { cart, clearCart } = useContext(CartContext)

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import CourseCard from '../CourseCard'
+import CourseCard from '../CourseCard/CourseCard'
 
 import { courses } from '../../database'
 

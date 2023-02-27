@@ -42,8 +42,8 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  background: #7b56a0;
+  background: #E90064;
+  /* background: #7b56a0; */
   border-radius: 0.75rem;
 
   cursor: pointer;
@@ -124,7 +124,7 @@ main {
 }
 
 .card {
-  background: white;
+  background: rgba(124, 138, 143, 0.253);
   width: 100%;
   padding: 2rem;
 
@@ -309,7 +309,7 @@ li {
 }
 
 input[type="submit"] {
-  background-color: #333;
+  background-color: #3D1766;
   color: #eee;
   display: block;
   width: 100%;
