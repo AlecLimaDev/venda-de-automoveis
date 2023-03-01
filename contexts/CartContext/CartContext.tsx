@@ -1,9 +1,15 @@
 import { createContext, useState, useEffect } from "react"
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
 
-export const CartContext = createContext({})
+interface CartProviderProps {
+  handleAddItemToCart?: (url, name, price) => void; 
+  handleRemoveItemFromCart?: (clickedItemIndex) => void;
+  children?: any;
+}
 
-export const CartProvider = ({ children }) => {
+export const CartContext: any = createContext({})
+
+export const CartProvider:React.FC<CartProviderProps> = ({ children }) => {
 
   const API = "http//localhost:5000"
 

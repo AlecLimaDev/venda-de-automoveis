@@ -1,8 +1,11 @@
-import { CartContext } from '@/contexts/CartContext'
+import { CartContext } from '@/contexts/CartContext/CartContext'
 import React, { useContext } from 'react'
 
-const Item = ({ name, price, itemIndex }) => {
-    const { handleRemoveItemFromCart } = useContext(CartContext)
+
+
+
+const Item:React.FC<ItemProps> = ({ name, price, itemIndex }) => {
+    const { handleRemoveItemFromCart } = useContext<any>(CartContext)
     
 
     return (

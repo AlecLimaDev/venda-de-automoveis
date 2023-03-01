@@ -1,9 +1,10 @@
-import { CartContext } from '@/contexts/CartContext'
-import React, { useContext } from 'react'
+import { CartContext } from '@/contexts/CartContext/CartContext'
+import React, { FunctionComponent, ReactNode, useContext } from 'react'
+import { CartItemsProps } from '../interfaces/CartItemsProps/CartItemsProps'
 import Item from '../Item/Item'
 
-const CartItems = () => {
-    const { cart } = useContext(CartContext)
+const CartItems:FunctionComponent<CartItemsProps> = () => {
+    const { cart } = useContext<any>(CartContext)
 
     return (
         <footer>

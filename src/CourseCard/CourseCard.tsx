@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { CartContext } from '@/contexts/CartContext'
+import { CartContext } from '@/contexts/CartContext/CartContext'
 import React, { useContext, useEffect, useState } from 'react'
 import { BsAlignStart, BsBookmarkCheck, BsBookmarkCheckFill, BsBrush, BsTrash } from 'react-icons/bs'
+import { CourseCardProps } from '../interfaces/CouseCardProps/CouseCardProps'
 
-const CourseCard = ({ img, title, price, manufacturing, description }) => {
-    const { handleAddItemToCart } = useContext(CartContext)
+
+const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
+    const { handleAddItemToCart } = useContext<any>(CartContext)
 
     const API = "http://localhost:5000"
 
@@ -64,12 +66,12 @@ const CourseCard = ({ img, title, price, manufacturing, description }) => {
         setTextArea("")
     }
 
-    const handleDelete = async (id) => {
+    const handleDelete = async (id: any) => {
         await fetch(API + "/todos/" + id, {
             method: "DELETE",
         })
 
-        setTodos((prevState) => prevState.filter((todo) => todo.id !== id))
+        setTodos((prevState) => prevState.filter((todo: any) => todo.id !== id))
     }
 
     const handleEdit = async (todo) => {
