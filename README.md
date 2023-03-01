@@ -42,6 +42,7 @@ Por fim, você precisará rodar o servidor da aplicação usando o comando `npm 
 
 ## Para a realização desse projeto foram utilizadas as seguintes Tecnologias:
 
+- TypeScript
 - Next.Js
 - React.Js
 - React-Icons
