@@ -7,8 +7,7 @@ import React from 'react'
 
 function ShoppingCart() {
 
-  const port = process.env.PORT || 3001
-   
+  
   return (
     <>
       <Navbar />
