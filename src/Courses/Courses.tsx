@@ -2,10 +2,7 @@ import React from 'react'
 import CourseCard from '../CourseCard/CourseCard'
 
 import { courses } from '../../database'
-
-interface CorsesProp {
-    handleAddItemToCart?: any;
-}
+import { CorsesProp } from '../interfaces/CoursesProps/CoursesProps'
 
 
 const Courses:React.FC<CorsesProp> = ({ handleAddItemToCart }) => {
@@ -18,7 +15,6 @@ const Courses:React.FC<CorsesProp> = ({ handleAddItemToCart }) => {
                         img={course.url}
                         title={course.name}
                         price={course.price}
-
                     />
                 ))}
             </section>

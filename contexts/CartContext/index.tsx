@@ -1,11 +1,6 @@
 import { createContext, useState, useEffect } from "react"
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
-
-interface CartProviderProps {
-  handleAddItemToCart?: (url, name, price) => void; 
-  handleRemoveItemFromCart?: (clickedItemIndex) => void;
-  children?: any;
-}
+import { CartProviderProps } from "../../src/interfaces/CartProviderProps/CartProviderProps"
 
 export const CartContext: any = createContext({})
 
@@ -13,17 +8,17 @@ export const CartProvider:React.FC<CartProviderProps> = ({ children }) => {
 
   const API = "http//localhost:5000"
 
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState<any>([])
 
-  const [title, setTitle] = useState("")
+  const [title, setTitle] = useState<any>("")
  
 
-  function handleAddItemToCart(url, name, price) {
+  function handleAddItemToCart(url: any, name: any, price: any) {
     const itemObject = { url, name, price }
     setCart([...cart, itemObject])
   }
 
-  function handleRemoveItemFromCart(clickedItemIndex) {
+  function handleRemoveItemFromCart(clickedItemIndex: any) {
     const filteredCart = cart.filter(cartItem => cart.indexOf(cartItem) !== clickedItemIndex)
     setCart(filteredCart)
   }

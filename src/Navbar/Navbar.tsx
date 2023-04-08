@@ -1,16 +1,12 @@
-import { CartContext } from '@/contexts/CartContext/CartContext'
+import { CartContext } from '../../contexts/CartContext'
 import React, { FunctionComponent, useContext } from 'react'
+import { NavBarProps } from '../interfaces/NavBarProps/NavBarProps'
 import Logo from '../Logo/Logo'
 
-interface NavBarProps {
-    cart?: any;
-    clearCart?: any;
-    useContext?: any;
-}
 
 const Navbar:FunctionComponent<NavBarProps> = () => {
     const { cart, clearCart } = useContext<any>(CartContext)
-    const totalPrice = cart.reduce((accumulator, current) => accumulator + current.price, 0)
+    const totalPrice = cart.reduce((accumulator: any, current: any) => accumulator + current.price, 0)
 
     return (
         <header>

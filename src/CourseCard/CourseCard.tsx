@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { CartContext } from '@/contexts/CartContext/CartContext'
+import { CartContext } from '../../contexts/CartContext'
 import React, { useContext, useEffect, useState } from 'react'
 import { BsAlignStart, BsBookmarkCheck, BsBookmarkCheckFill, BsBrush, BsTrash } from 'react-icons/bs'
 import { CourseCardProps } from '../interfaces/CouseCardProps/CouseCardProps'
@@ -10,13 +10,13 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
 
     const API = "http://localhost:5000"
 
-    const [carOwner, setTitle] = useState("")
-    const [textArea, setTextArea] = useState("")
-    const [email, setEmail] = useState("")
-    const [number, setNumber] = useState("")
-    const [time, setTime] = useState("")
-    const [todos, setTodos] = useState([])
-    const [loading, setLoading] = useState(false)
+    const [carOwner, setTitle] = useState<any>("")
+    const [textArea, setTextArea] = useState<any>("")
+    const [email, setEmail] = useState<any>("")
+    const [number, setNumber] = useState<any>("")
+    const [time, setTime] = useState<any>("")
+    const [todos, setTodos] = useState<any>([])
+    const [loading, setLoading] = useState<any>(false)
 
     useEffect(() => {
         const loadData = async () => {
@@ -35,7 +35,7 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
         loadData()
     }, [])
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault()
 
         const todo = {
@@ -56,7 +56,7 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
             },
         })
 
-        setTodos((prevState) => [...prevState, todo])
+        setTodos((prevState: any) => [...prevState, todo])
 
 
         setTitle("")
@@ -71,10 +71,10 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
             method: "DELETE",
         })
 
-        setTodos((prevState) => prevState.filter((todo: any) => todo.id !== id))
+        setTodos((prevState: any) => prevState.filter((todo: any) => todo.id !== id))
     }
 
-    const handleEdit = async (todo) => {
+    const handleEdit = async (todo: any) => {
 
         todo.done = !todo.done;
 
@@ -86,7 +86,7 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
             }
         })
 
-        setTodos((prevState) => prevState.map((t) => (t.id === data.id) ? (t = data) : t))
+        setTodos((prevState: any) => prevState.map((t: any) => (t.id === data.id) ? (t = data) : t))
     }
 
 
@@ -157,7 +157,7 @@ const CourseCard:React.FC<CourseCardProps> = ({ img, title, price }) => {
                     <div className="list-todo">
                         <h2>Lista de Donos:</h2>
                         {todos.length === 0 && <p>Ainda não teve um dono.</p>}
-                        {todos.map((todo) => (
+                        {todos.map((todo: any) => (
                             <div className="todo" key={todo.id}>
                                 <h3 className={todo.done ? "todo-done" : ""}>{todo.carOwner}</h3>
                                 <p>Celular de contato: {todo.number}</p>

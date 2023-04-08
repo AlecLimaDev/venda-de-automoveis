@@ -2,10 +2,13 @@
   "name": "automoveis",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node ./pages/index.tsx",
     "lint": "next lint",
     "server": "json-server --watch data/db.json --port 5000"
   },

@@ -1,5 +1,5 @@
-import { CartProvider } from '@/contexts/CartContext/CartContext'
-import '@/styles/globals.css'
+import { CartProvider } from '../contexts/CartContext'
+import '../styles/globals.css'
 
 function App({ Component, pageProps }) {
   return (<CartProvider>

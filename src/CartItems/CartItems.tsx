@@ -1,4 +1,4 @@
-import { CartContext } from '@/contexts/CartContext/CartContext'
+import { CartContext } from '../../contexts/CartContext'
 import React, { FunctionComponent, ReactNode, useContext } from 'react'
 import { CartItemsProps } from '../interfaces/CartItemsProps/CartItemsProps'
 import Item from '../Item/Item'
