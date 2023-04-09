@@ -24,16 +24,17 @@ A aplicação se trata de um anúncio de vendas de automóveis usados.
 
 ✔️ Opção de visualizar, criar, editar e excluir os dados do dono do carro. 
 
-## `Aplicação`
+## `Sobre a Aplicação`
 
- No link a seguir contém o Link da aplicação: [`Deploy`](https://venda-de-automoveis.vercel.app/).
-
+Esta aplicação tem como objetivo permitir a visualização e compra de carros usados, sendo possível também verificar as avaliações dos donos anteriores.
 
 ## `VISUALIZAÇÃO DO PROJETO`
 
-Para ver o projeto em sua máquina, você precisará cloná-lo com o comando `git clone` nesse link: `https://github.com/AlecLimaDev/venda-de-automoveis.git`.
+Para ver o projeto em sua máquina, você precisará cloná-lo com o comando `git clone` com esse link: `https://github.com/AlecLimaDev/venda-de-automoveis.git`.
 
-Em seguida, você precisará baixar as dependências necessárias usando o comando `npm install`.
+Você vai precisar digitar assim no seu terminal `git clone https://github.com/AlecLimaDev/venda-de-automoveis.git`
+
+Em seguida, você precisará baixar as dependências necessárias usando o comando `npm i`.
 
 Por fim, você precisará rodar o servidor da aplicação usando o comando `npm run server` e abrir a aplicação usando o comando `npm run dev`.
 
@@ -50,4 +51,4 @@ Por fim, você precisará rodar o servidor da aplicação usando o comando `npm 
 
 # `LAYOUT`
 
-![IMAGEM](review/Review.gif)
+![IMAGEM](./assets/Review.gif)
