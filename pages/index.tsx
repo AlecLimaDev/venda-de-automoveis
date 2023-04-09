@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import CartItems from '../src/CartItems/CartItems'
-import Courses from '../src/Courses/Courses'
-import Navbar from '../src/Navbar/Navbar'
+import CartItems from '../src/components/CartItems/CartItems'
+import Navbar from '../src/components/Navbar/Navbar'
 import React from 'react'
+import Vehicles from '../src/components/Vehicles/Vehicles'
 
 
 function ShoppingCart() {
@@ -11,7 +11,7 @@ function ShoppingCart() {
   return (
     <>
       <Navbar />
-      <Courses />
+      <Vehicles />
       <CartItems />
     </>
   )

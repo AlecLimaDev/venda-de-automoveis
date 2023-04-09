@@ -1,38 +1,37 @@
-import { createContext, useState, useEffect } from "react"
-import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs"
-import { CartProviderProps } from "../../src/interfaces/CartProviderProps/CartProviderProps"
+import { createContext, useState, ReactNode } from "react";
 
-export const CartContext: any = createContext({})
+export const CartContext: any = createContext({});
 
-export const CartProvider:React.FC<CartProviderProps> = ({ children }) => {
+interface CartProviderProps {
+  children?: ReactNode;
+}
 
-  const API = "http//localhost:5000"
+export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
+  const API = "http//localhost:5000";
 
-  const [cart, setCart] = useState<any>([])
+  const [cart, setCart] = useState<any>([]);
 
-  const [title, setTitle] = useState<any>("")
- 
-
-  function handleAddItemToCart(url: any, name: any, price: any) {
-    const itemObject = { url, name, price }
-    setCart([...cart, itemObject])
+  function handleAddItemToCart(url: string, name: string, price: number) {
+    const itemObject = { url, name, price };
+    setCart([...cart, itemObject]);
   }
 
   function handleRemoveItemFromCart(clickedItemIndex: any) {
-    const filteredCart = cart.filter(cartItem => cart.indexOf(cartItem) !== clickedItemIndex)
-    setCart(filteredCart)
+    const filteredCart = cart.filter(
+      (cartItem: any) => cart.indexOf(cartItem) !== clickedItemIndex
+    );
+    setCart(filteredCart);
   }
-
 
   function clearCart() {
-    setCart([])
+    setCart([]);
   }
 
-
-
-
-
-
-  return <CartContext.Provider value={{ cart, handleAddItemToCart, handleRemoveItemFromCart, clearCart }}>{children}</CartContext.Provider>
-
-}
+  return (
+    <CartContext.Provider
+      value={{ cart, handleAddItemToCart, handleRemoveItemFromCart, clearCart }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};

@@ -1,4 +1,4 @@
-export const courses = [
+export const vehicles = [
     { url: "renault-kwid.jpg", name: "Renaut Kwid", price: 66590.00, manufacturing: 2023, description: "Potente e Inovador" },
     { url: "fiat-mobi.jpg", name: "Fiat Mobi", price: 62950.00, manufacturing: 2023, description: "Potente e Inovador" },
     { url: "citroen-c3.jpg", name: "Citroën C3", price: 69990.00, manufacturing: 2023, description: "Potente e Inovador" },
